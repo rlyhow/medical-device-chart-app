@@ -14,6 +14,8 @@
 		10B462DB283110E900A203DB /* MedicineDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DA283110E900A203DB /* MedicineDevice.swift */; };
 		10B462DE2831115A00A203DB /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DD2831115A00A203DB /* JsonParser.swift */; };
 		10B462E1283111A800A203DB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462E0283111A800A203DB /* Array+Extensions.swift */; };
+		10B462E32831191400A203DB /* TransactionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462E22831191400A203DB /* TransactionChartView.swift */; };
+		F7699FBAEC2C1A9730513346 /* Pods_MedicalDeviceChartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,10 @@
 		10B462DA283110E900A203DB /* MedicineDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDevice.swift; sourceTree = "<group>"; };
 		10B462DD2831115A00A203DB /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		10B462E0283111A800A203DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		10B462E22831191400A203DB /* TransactionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionChartView.swift; sourceTree = "<group>"; };
+		338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.release.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.release.xcconfig"; sourceTree = "<group>"; };
+		4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.debug.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalDeviceChartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7699FBAEC2C1A9730513346 /* Pods_MedicalDeviceChartApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,8 @@
 			children = (
 				101F81DD282D4B0400A63554 /* MedicalDeviceChartApp */,
 				101F81DC282D4B0400A63554 /* Products */,
+				DA78BFDB510AC9B5BDC2F9A1 /* Pods */,
+				EC8FE2FCF4550DD9770616CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				101F81E0282D4B0400A63554 /* MainView.swift */,
+				10B462E22831191400A203DB /* TransactionChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +118,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DA78BFDB510AC9B5BDC2F9A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */,
+				338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC8FE2FCF4550DD9770616CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101F81E9282D4B0500A63554 /* Build configuration list for PBXNativeTarget "MedicalDeviceChartApp" */;
 			buildPhases = (
+				F202F2853B49958C4697840F /* [CP] Check Pods Manifest.lock */,
 				101F81D7282D4B0400A63554 /* Sources */,
 				101F81D8282D4B0400A63554 /* Frameworks */,
 				101F81D9282D4B0400A63554 /* Resources */,
+				3B1FF2C4968259713894A4B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +203,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B1FF2C4968259713894A4B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F202F2853B49958C4697840F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicalDeviceChartApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		101F81D7282D4B0400A63554 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,6 +252,7 @@
 			files = (
 				10B462DB283110E900A203DB /* MedicineDevice.swift in Sources */,
 				10B462E1283111A800A203DB /* Array+Extensions.swift in Sources */,
+				10B462E32831191400A203DB /* TransactionChartView.swift in Sources */,
 				101F81E1282D4B0400A63554 /* MainView.swift in Sources */,
 				10B462DE2831115A00A203DB /* JsonParser.swift in Sources */,
 				101F81DF282D4B0400A63554 /* MedicalDeviceChartAppApp.swift in Sources */,
@@ -307,6 +380,7 @@
 		};
 		101F81EA282D4B0500A63554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +410,7 @@
 		};
 		101F81EB282D4B0500A63554 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
