@@ -12,6 +12,7 @@
 		101F81E3282D4B0500A63554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F81E2282D4B0500A63554 /* Assets.xcassets */; };
 		101F81E6282D4B0500A63554 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F81E5282D4B0500A63554 /* Preview Assets.xcassets */; };
 		10B462DB283110E900A203DB /* MedicineDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DA283110E900A203DB /* MedicineDevice.swift */; };
+		10B462DE2831115A00A203DB /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DD2831115A00A203DB /* JsonParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		101F81E2282D4B0500A63554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101F81E5282D4B0500A63554 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10B462DA283110E900A203DB /* MedicineDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDevice.swift; sourceTree = "<group>"; };
+		10B462DD2831115A00A203DB /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				101F81DE282D4B0400A63554 /* MedicalDeviceChartAppApp.swift */,
 				10B462D9283110DA00A203DB /* Models */,
 				10B462D8283106D000A203DB /* Views */,
+				10B462DC2831114E00A203DB /* Services */,
 				101F81E2282D4B0500A63554 /* Assets.xcassets */,
 				101F81E4282D4B0500A63554 /* Preview Content */,
 			);
@@ -84,6 +87,14 @@
 				10B462DA283110E900A203DB /* MedicineDevice.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10B462DC2831114E00A203DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				10B462DD2831115A00A203DB /* JsonParser.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				10B462DB283110E900A203DB /* MedicineDevice.swift in Sources */,
 				101F81E1282D4B0400A63554 /* MainView.swift in Sources */,
+				10B462DE2831115A00A203DB /* JsonParser.swift in Sources */,
 				101F81DF282D4B0400A63554 /* MedicalDeviceChartAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
