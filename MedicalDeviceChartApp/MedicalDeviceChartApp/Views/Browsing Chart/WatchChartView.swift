@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Charts
 
 struct WatchChartView: View {
     
@@ -21,7 +20,6 @@ struct WatchChartView: View {
         return VStack {
             HStack (spacing: 20) {
                 Text(watchChartVM.medicineDeviceObject?.coverObj.descr ?? "")
-                    .frame(alignment: .leading)
                     .padding(10)
                     .font(.title2)
                 
@@ -36,7 +34,7 @@ struct WatchChartView: View {
             )
             
             TransactionChartView(entries: watchChartVM.getDataEntries())
-        } .padding(.top, 10)
+        } .padding([.top, .leading, .trailing], 10)
     }
 }
 

@@ -93,6 +93,10 @@ struct MainView: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
+            UIDevice.current.setValue(UIInterfaceOrientation.landscapeRight.rawValue, forKey: "orientation")
+            AppDelegate.orientationLock = .landscape
+        }
     }
 }
 
