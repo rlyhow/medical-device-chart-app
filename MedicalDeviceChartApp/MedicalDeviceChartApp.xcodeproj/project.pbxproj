@@ -34,7 +34,7 @@
 		10B462DD2831115A00A203DB /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		10B462E0283111A800A203DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		10B462E22831191400A203DB /* TransactionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionChartView.swift; sourceTree = "<group>"; };
-		10D6A17828323ED900D1D09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10D6A17828323ED900D1D09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.release.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.release.xcconfig"; sourceTree = "<group>"; };
 		4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.debug.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalDeviceChartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,14 +73,12 @@
 		101F81DD282D4B0400A63554 /* MedicalDeviceChartApp */ = {
 			isa = PBXGroup;
 			children = (
-				10AED28E2831288F001A7018 /* deviceInfo */,
 				101F81DE282D4B0400A63554 /* MedicalDeviceChartAppApp.swift */,
 				10B462D9283110DA00A203DB /* Models */,
 				10B462D8283106D000A203DB /* Views */,
 				10B462DC2831114E00A203DB /* Services */,
 				10B462DF2831119700A203DB /* Extensions */,
-				101F81E2282D4B0500A63554 /* Assets.xcassets */,
-				10D6A17828323ED900D1D09F /* Info.plist */,
+				10EA1B1428325971003FF24D /* Resources */,
 				101F81E4282D4B0500A63554 /* Preview Content */,
 			);
 			path = MedicalDeviceChartApp;
@@ -127,6 +125,16 @@
 				10B462E0283111A800A203DB /* Array+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10EA1B1428325971003FF24D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				101F81E2282D4B0500A63554 /* Assets.xcassets */,
+				10AED28E2831288F001A7018 /* deviceInfo */,
+				10D6A17828323ED900D1D09F /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DA78BFDB510AC9B5BDC2F9A1 /* Pods */ = {
@@ -403,7 +411,7 @@
 				DEVELOPMENT_TEAM = 992S4CF5Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalDeviceChartApp/Info.plist;
+				INFOPLIST_FILE = MedicalDeviceChartApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,7 +443,7 @@
 				DEVELOPMENT_TEAM = 992S4CF5Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalDeviceChartApp/Info.plist;
+				INFOPLIST_FILE = MedicalDeviceChartApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
