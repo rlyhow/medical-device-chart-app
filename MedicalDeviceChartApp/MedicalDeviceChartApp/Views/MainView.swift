@@ -16,10 +16,7 @@ struct MainButtonStyle: ButtonStyle {
             .frame(maxWidth: .infinity)
             .background(Color.green)
             .cornerRadius(16)
-            .overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.gray, lineWidth: 4)
-            )
+            .shadow(color: .gray, radius: 4, x: 5, y: 5)
     }
 }
 
@@ -30,6 +27,19 @@ struct MainView: View {
             
             VStack(spacing: 20) {
                 
+                Text("Добро пожаловать!")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 60)
+                    .background(Color.green)
+                    .font(.title.bold())
+                    .foregroundColor(.white)
+                    .cornerRadius(12)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.gray, lineWidth: 4)
+                    )
+                    .padding(.horizontal, 40)
+
                 HStack(spacing: 20) {
                     
                     Button(action: {}) {
