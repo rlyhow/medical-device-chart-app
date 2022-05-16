@@ -18,6 +18,7 @@
 		10B462DE2831115A00A203DB /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DD2831115A00A203DB /* JsonParser.swift */; };
 		10B462E1283111A800A203DB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462E0283111A800A203DB /* Array+Extensions.swift */; };
 		10B462E32831191400A203DB /* TransactionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462E22831191400A203DB /* TransactionChartView.swift */; };
+		10EA1B17283276E9003FF24D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA1B16283276E9003FF24D /* String+Extensions.swift */; };
 		F7699FBAEC2C1A9730513346 /* Pods_MedicalDeviceChartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		10B462E0283111A800A203DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		10B462E22831191400A203DB /* TransactionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionChartView.swift; sourceTree = "<group>"; };
 		10D6A17828323ED900D1D09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10EA1B16283276E9003FF24D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.release.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.release.xcconfig"; sourceTree = "<group>"; };
 		4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.debug.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalDeviceChartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				10B462E0283111A800A203DB /* Array+Extensions.swift */,
+				10EA1B16283276E9003FF24D /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				10B462E1283111A800A203DB /* Array+Extensions.swift in Sources */,
 				10B462E32831191400A203DB /* TransactionChartView.swift in Sources */,
 				10AED28D2831219D001A7018 /* WatchChartView.swift in Sources */,
+				10EA1B17283276E9003FF24D /* String+Extensions.swift in Sources */,
 				101F81E1282D4B0400A63554 /* MainView.swift in Sources */,
 				10AED28B28311C99001A7018 /* WatchChartViewVM.swift in Sources */,
 				10B462DE2831115A00A203DB /* JsonParser.swift in Sources */,
