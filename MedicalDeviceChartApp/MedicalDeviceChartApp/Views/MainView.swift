@@ -58,7 +58,7 @@ struct MainView: View {
                 HStack(spacing: 20) {
                     
                     Button(action: {}) {
-                        NavigationLink(destination: {}) {
+                        NavigationLink(destination: WatchChartView()) {
                             HStack {
                                 Image(systemName: "doc.text.magnifyingglass")
                                     .padding(.leading, 20)

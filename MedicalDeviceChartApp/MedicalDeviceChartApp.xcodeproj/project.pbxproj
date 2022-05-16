@@ -11,6 +11,9 @@
 		101F81E1282D4B0400A63554 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F81E0282D4B0400A63554 /* MainView.swift */; };
 		101F81E3282D4B0500A63554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F81E2282D4B0500A63554 /* Assets.xcassets */; };
 		101F81E6282D4B0500A63554 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F81E5282D4B0500A63554 /* Preview Assets.xcassets */; };
+		10AED28B28311C99001A7018 /* WatchChartViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AED28A28311C99001A7018 /* WatchChartViewVM.swift */; };
+		10AED28D2831219D001A7018 /* WatchChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AED28C2831219D001A7018 /* WatchChartView.swift */; };
+		10AED28F2831288F001A7018 /* deviceInfo in Resources */ = {isa = PBXBuildFile; fileRef = 10AED28E2831288F001A7018 /* deviceInfo */; };
 		10B462DB283110E900A203DB /* MedicineDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DA283110E900A203DB /* MedicineDevice.swift */; };
 		10B462DE2831115A00A203DB /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462DD2831115A00A203DB /* JsonParser.swift */; };
 		10B462E1283111A800A203DB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B462E0283111A800A203DB /* Array+Extensions.swift */; };
@@ -24,10 +27,14 @@
 		101F81E0282D4B0400A63554 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		101F81E2282D4B0500A63554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101F81E5282D4B0500A63554 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10AED28A28311C99001A7018 /* WatchChartViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchChartViewVM.swift; sourceTree = "<group>"; };
+		10AED28C2831219D001A7018 /* WatchChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchChartView.swift; sourceTree = "<group>"; };
+		10AED28E2831288F001A7018 /* deviceInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deviceInfo; sourceTree = "<group>"; };
 		10B462DA283110E900A203DB /* MedicineDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDevice.swift; sourceTree = "<group>"; };
 		10B462DD2831115A00A203DB /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		10B462E0283111A800A203DB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		10B462E22831191400A203DB /* TransactionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionChartView.swift; sourceTree = "<group>"; };
+		10D6A17828323ED900D1D09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.release.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.release.xcconfig"; sourceTree = "<group>"; };
 		4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalDeviceChartApp.debug.xcconfig"; path = "Target Support Files/Pods-MedicalDeviceChartApp/Pods-MedicalDeviceChartApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8327D02B8685F2A74234D06A /* Pods_MedicalDeviceChartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalDeviceChartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,12 +73,14 @@
 		101F81DD282D4B0400A63554 /* MedicalDeviceChartApp */ = {
 			isa = PBXGroup;
 			children = (
+				10AED28E2831288F001A7018 /* deviceInfo */,
 				101F81DE282D4B0400A63554 /* MedicalDeviceChartAppApp.swift */,
 				10B462D9283110DA00A203DB /* Models */,
 				10B462D8283106D000A203DB /* Views */,
 				10B462DC2831114E00A203DB /* Services */,
 				10B462DF2831119700A203DB /* Extensions */,
 				101F81E2282D4B0500A63554 /* Assets.xcassets */,
+				10D6A17828323ED900D1D09F /* Info.plist */,
 				101F81E4282D4B0500A63554 /* Preview Content */,
 			);
 			path = MedicalDeviceChartApp;
@@ -89,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				101F81E0282D4B0400A63554 /* MainView.swift */,
+				10AED28C2831219D001A7018 /* WatchChartView.swift */,
+				10AED28A28311C99001A7018 /* WatchChartViewVM.swift */,
 				10B462E22831191400A203DB /* TransactionChartView.swift */,
 			);
 			path = Views;
@@ -124,7 +135,6 @@
 				4F954C11B1B728731BFC0D18 /* Pods-MedicalDeviceChartApp.debug.xcconfig */,
 				338A499003070CDF17470D0D /* Pods-MedicalDeviceChartApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -197,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				101F81E6282D4B0500A63554 /* Preview Assets.xcassets in Resources */,
+				10AED28F2831288F001A7018 /* deviceInfo in Resources */,
 				101F81E3282D4B0500A63554 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +264,9 @@
 				10B462DB283110E900A203DB /* MedicineDevice.swift in Sources */,
 				10B462E1283111A800A203DB /* Array+Extensions.swift in Sources */,
 				10B462E32831191400A203DB /* TransactionChartView.swift in Sources */,
+				10AED28D2831219D001A7018 /* WatchChartView.swift in Sources */,
 				101F81E1282D4B0400A63554 /* MainView.swift in Sources */,
+				10AED28B28311C99001A7018 /* WatchChartViewVM.swift in Sources */,
 				10B462DE2831115A00A203DB /* JsonParser.swift in Sources */,
 				101F81DF282D4B0400A63554 /* MedicalDeviceChartAppApp.swift in Sources */,
 			);
@@ -390,11 +403,13 @@
 				DEVELOPMENT_TEAM = 992S4CF5Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedicalDeviceChartApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,11 +435,13 @@
 				DEVELOPMENT_TEAM = 992S4CF5Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedicalDeviceChartApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
