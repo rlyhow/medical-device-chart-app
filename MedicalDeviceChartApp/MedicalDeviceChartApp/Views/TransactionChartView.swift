@@ -51,13 +51,16 @@ struct TransactionChartView: UIViewRepresentable  {
         lineChartView.leftAxis.granularity = 1
         
         lineChartView.setVisibleXRangeMaximum(4)
-        lineChartView.extraTopOffset = 40
+        lineChartView.extraTopOffset = 20
         //lineChartView.extraBottomOffset = 30
     }
 }
 
 class YAxisValueFormatter: AxisValueFormatter {
+    
+    let unitsOfMeasure: String = "mV"
+    
     func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return String(value) + " mV"
+        return "\(value) \(unitsOfMeasure)"
     }
 }

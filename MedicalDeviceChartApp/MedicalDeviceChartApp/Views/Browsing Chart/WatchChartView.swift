@@ -18,12 +18,31 @@ struct WatchChartView: View {
         watchChartVM.getDataFrom(base64String: watchChartVM.medicineDeviceObject?.coverObj.filecontent)
         watchChartVM.getArrayOfDoubles()
         
-        return TransactionChartView(entries: watchChartVM.getDataEntries())
+        return VStack {
+            HStack (spacing: 20) {
+                Text(watchChartVM.medicineDeviceObject?.coverObj.descr ?? "")
+                    .frame(alignment: .leading)
+                    .padding(10)
+                    .font(.title2)
+                
+                Text(watchChartVM.medicineDeviceObject?.coverObj.fName ?? "")
+                    .font(.title2)
+                
+                Spacer()
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color.black, lineWidth: 3)
+            )
+            
+            TransactionChartView(entries: watchChartVM.getDataEntries())
+        } .padding(.top, 10)
     }
 }
 
 struct WatchChartView_Previews: PreviewProvider {
     static var previews: some View {
         WatchChartView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

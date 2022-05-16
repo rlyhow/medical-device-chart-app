@@ -39,7 +39,7 @@ struct MainView: View {
                             .stroke(Color.gray, lineWidth: 4)
                     )
                     .padding(.horizontal, 40)
-
+                
                 HStack(spacing: 20) {
                     
                     Button(action: {}) {
@@ -99,6 +99,6 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-.previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
