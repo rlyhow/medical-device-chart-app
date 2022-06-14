@@ -8,45 +8,43 @@
 import Foundation
 import Charts
 
-class WatchChartViewVM {
-    
-    var receivedData: Data = Data()
+class WatchChartViewVM: ObservableObject {
+     
     var fileName: String? = "deviceInfo"
     
     var arrayOfDoubles = [Double]()
-    var entries: [ChartDataEntry] = []
-    
     var medicineDeviceObject: MedicineDevice?
-    private let jsonParserService: JsonParser
     
-    init(jsonParserService: JsonParser) {
+    private let jsonParserService: JsonParserProtocol
+    
+    init(jsonParserService: JsonParserProtocol) {
         self.jsonParserService = jsonParserService
     }
     
-    func loadMedicineDeviceModel() {
-        guard let name = fileName else {
-            print("ERROR: CAN'T FIND FILE")
-            return
+    func loadChartValues() {
+        if let medicineModel = loadMedicineDeviceModel() {
+            if let receivedData = getDataFrom(base64String: medicineModel.coverObj.filecontent) {
+                getArrayOfDoubles(receivedData: receivedData)
+            }
         }
-        medicineDeviceObject = jsonParserService.loadJson(filename: name)
-        print("SUCCESS LOAD FILE")
     }
     
-    func getDataFrom(base64String stringFromFile: String?) {
+    func loadMedicineDeviceModel() -> MedicineDevice? {
+        guard let name = fileName else { return nil }
+        medicineDeviceObject = jsonParserService.loadJson(filename: name)
+        return medicineDeviceObject
+    }
+    
+    func getDataFrom(base64String stringFromFile: String?) -> Data? {
         guard let base64String = stringFromFile else {
             print("ERROR: CAN'T GET STRING FROM MODEL")
-            return
+            return nil
         }
         
-        guard let dataFromEncodedString = Data(base64Encoded: base64String, options: .ignoreUnknownCharacters) else {
-            print("ERROR: CAN'T GET DATA FROM base64String")
-            return
-        }
-        
-        receivedData = dataFromEncodedString
+        return Data(base64Encoded: base64String, options: .ignoreUnknownCharacters)
     }
     
-    func getArrayOfDoubles() {
+    func getArrayOfDoubles(receivedData: Data) {
         
         let multiDimensionalArray = [UInt8](receivedData).chunked(into: MemoryLayout<Double>.stride)
         

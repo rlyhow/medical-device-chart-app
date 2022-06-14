@@ -7,7 +7,11 @@
 
 import Foundation
 
-class JsonParser {
+protocol JsonParserProtocol {
+    func loadJson(filename fileName: String) -> MedicineDevice?
+}
+
+class JsonParser: JsonParserProtocol {
     
     func loadJson(filename fileName: String) -> MedicineDevice? {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "") {
