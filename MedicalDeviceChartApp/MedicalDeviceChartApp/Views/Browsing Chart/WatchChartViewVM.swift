@@ -10,8 +10,6 @@ import Charts
 
 class WatchChartViewVM: ObservableObject {
      
-    var fileName: String? = "deviceInfo"
-    
     var arrayOfDoubles = [Double]()
     var medicineDeviceObject: MedicineDevice?
     
@@ -21,15 +19,15 @@ class WatchChartViewVM: ObservableObject {
         self.jsonParserService = jsonParserService
     }
     
-    func loadChartValues() {
-        if let medicineModel = loadMedicineDeviceModel() {
+    func loadChartValues(from fileName: String?) {
+        if let medicineModel = loadMedicineDeviceModel(from: fileName) {
             if let receivedData = getDataFrom(base64String: medicineModel.coverObj.filecontent) {
                 getArrayOfDoubles(receivedData: receivedData)
             }
         }
     }
     
-    func loadMedicineDeviceModel() -> MedicineDevice? {
+    func loadMedicineDeviceModel(from fileName: String?) -> MedicineDevice? {
         guard let name = fileName else { return nil }
         medicineDeviceObject = jsonParserService.loadJson(filename: name)
         return medicineDeviceObject
@@ -47,6 +45,7 @@ class WatchChartViewVM: ObservableObject {
     func getArrayOfDoubles(receivedData: Data) {
         
         let multiDimensionalArray = [UInt8](receivedData).chunked(into: MemoryLayout<Double>.stride)
+        arrayOfDoubles = []
         
         multiDimensionalArray.forEach({
             arrayOfDoubles.append(binaryToType($0.reversed(), Double.self))

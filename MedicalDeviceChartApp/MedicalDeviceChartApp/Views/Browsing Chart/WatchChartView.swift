@@ -10,10 +10,10 @@ import SwiftUI
 struct WatchChartView: View {
     
     @StateObject var watchChartVM = WatchChartViewVM(jsonParserService: JsonParser())
+    @State private var fileName = "deviceInfo"
     
     var body: some View {
-        
-        watchChartVM.loadChartValues()
+        watchChartVM.loadChartValues(from: fileName)
         
         return VStack {
             HStack (spacing: 20) {
