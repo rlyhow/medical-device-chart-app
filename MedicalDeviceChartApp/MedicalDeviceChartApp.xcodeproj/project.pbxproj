@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				101F81E0282D4B0400A63554 /* MainView.swift */,
-				10EA1B1528325C30003FF24D /* Browsing Chart */,
+				10EA1B1528325C30003FF24D /* WatchChartView */,
 				10B462E22831191400A203DB /* TransactionChartView.swift */,
 			);
 			path = Views;
@@ -139,13 +139,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		10EA1B1528325C30003FF24D /* Browsing Chart */ = {
+		10EA1B1528325C30003FF24D /* WatchChartView */ = {
 			isa = PBXGroup;
 			children = (
 				10AED28C2831219D001A7018 /* WatchChartView.swift */,
 				10AED28A28311C99001A7018 /* WatchChartViewVM.swift */,
 			);
-			path = "Browsing Chart";
+			path = WatchChartView;
 			sourceTree = "<group>";
 		};
 		DA78BFDB510AC9B5BDC2F9A1 /* Pods */ = {
