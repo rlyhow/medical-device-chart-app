@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		101F81DF282D4B0400A63554 /* MedicalDeviceChartAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F81DE282D4B0400A63554 /* MedicalDeviceChartAppApp.swift */; };
-		101F81E1282D4B0400A63554 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F81E0282D4B0400A63554 /* MainView.swift */; };
+		101F81E1282D4B0400A63554 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F81E0282D4B0400A63554 /* MainMenuView.swift */; };
 		101F81E3282D4B0500A63554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F81E2282D4B0500A63554 /* Assets.xcassets */; };
 		101F81E6282D4B0500A63554 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F81E5282D4B0500A63554 /* Preview Assets.xcassets */; };
 		10AED28B28311C99001A7018 /* WatchChartViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AED28A28311C99001A7018 /* WatchChartViewVM.swift */; };
@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		101F81DB282D4B0400A63554 /* MedicalDeviceChartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalDeviceChartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101F81DE282D4B0400A63554 /* MedicalDeviceChartAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDeviceChartAppApp.swift; sourceTree = "<group>"; };
-		101F81E0282D4B0400A63554 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		101F81E0282D4B0400A63554 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		101F81E2282D4B0500A63554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101F81E5282D4B0500A63554 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10AED28A28311C99001A7018 /* WatchChartViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchChartViewVM.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		10B462D8283106D000A203DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				101F81E0282D4B0400A63554 /* MainView.swift */,
+				101F81E0282D4B0400A63554 /* MainMenuView.swift */,
 				10EA1B1528325C30003FF24D /* WatchChartView */,
 				10B462E22831191400A203DB /* TransactionChartView.swift */,
 			);
@@ -285,7 +285,7 @@
 				10B462E32831191400A203DB /* TransactionChartView.swift in Sources */,
 				10AED28D2831219D001A7018 /* WatchChartView.swift in Sources */,
 				10EA1B17283276E9003FF24D /* String+Extensions.swift in Sources */,
-				101F81E1282D4B0400A63554 /* MainView.swift in Sources */,
+				101F81E1282D4B0400A63554 /* MainMenuView.swift in Sources */,
 				10AED28B28311C99001A7018 /* WatchChartViewVM.swift in Sources */,
 				10B462DE2831115A00A203DB /* JsonParser.swift in Sources */,
 				101F81DF282D4B0400A63554 /* MedicalDeviceChartAppApp.swift in Sources */,

@@ -21,7 +21,7 @@ struct WatchChartView: View {
                     .padding(10)
                     .font(.title2)
 
-                Text(watchChartVM.medicineDeviceObject?.coverObj.fName.getFormattedDate(formatFrom: "yyyy-MM-dd_HH-mm-ss", formatTo: "yyyy-MM-dd HH:mm:ss") ?? "")
+                Text(watchChartVM.getFormattedDataForChar(formatFrom: "yyyy-MM-dd_HH-mm-ss", formatTo: "yyyy-MM-dd HH:mm:ss"))
                     .font(.title2)
                 
                 Spacer()

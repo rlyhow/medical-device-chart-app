@@ -73,4 +73,11 @@ class WatchChartViewVM: ObservableObject {
         return dataArray
     }
     
+    func getFormattedDataForChar(formatFrom: String, formatTo: String) -> String {
+        guard let date = medicineDeviceObject?.coverObj.fName.getFormattedDate(formatFrom: formatFrom, formatTo: formatTo) else {
+            return ""
+        }
+        
+        return date
+    }
 }
